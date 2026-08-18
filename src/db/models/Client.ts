@@ -25,6 +25,6 @@ Client.init({
 },
     {
         sequelize,
-        tableName: "client",
+        tableName: "clients",
         timestamps: true,
     })
