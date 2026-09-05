@@ -1,11 +1,11 @@
 import {Sequelize} from "sequelize";
 
 export const sequelize = new Sequelize(
-    "insurance_enrollment",
-    "root",
-    "",
+    process.env.DB_NAME || "",
+    process.env.DB_USER || "",
+    process.env.DB_PASSWORD || "",
     {
-        host:"localhost",
+        host: process.env.DB_HOST || "localhost",
         dialect: "mysql",
         logging: console.log,
     }
