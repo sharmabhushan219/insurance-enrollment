@@ -1,2 +1,4 @@
 insurance-enrollment/node_modules
 insurance-enrollment/src/db/sequelize.ts
+.env
+.env.local
